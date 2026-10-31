@@ -1,0 +1,7 @@
+@tailwind base; @tailwind components; @tailwind utilities;
+html { scroll-behavior: smooth; scroll-padding-top: 5rem; }
+body { @apply bg-ink text-neutral-200 font-sans antialiased; }
+.hatch { background-image: repeating-linear-gradient(135deg, #1a1a1a 0 1px, transparent 1px 6px); }
+.frame { @apply border border-line bg-panel; }
+:focus-visible { outline: 2px solid #c4ff3d; outline-offset: 3px; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
